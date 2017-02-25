@@ -59,3 +59,5 @@ target/
 
 # Zip files
 *.zip
+
+week-5/intro-to-tensorflow/neural-network/notMNIST\.pickle
