@@ -1,2 +1,2 @@
-[submodule "examples/DeepLearningFlappyBird"]
+[submodule "examples/deep-learning-flappy-bird"]
 	url = https://github.com/yenchenlin/DeepLearningFlappyBird
