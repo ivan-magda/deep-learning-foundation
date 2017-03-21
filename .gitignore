@@ -7,21 +7,21 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
+*.Python
+*env/
+*build/
+*develop-eggs/
+*dist/
+*downloads/
+*eggs/
+*.eggs/
+*lib/
+*lib64/
+*parts/
+*sdist/
+*var/
 *.egg-info/
-.installed.cfg
+*.installed.cfg
 *.egg
 
 # PyInstaller
@@ -31,17 +31,17 @@ var/
 *.spec
 
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+*pip-log.txt
+*pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
+*htmlcov/
+*.tox/
+*.coverage
+*.coverage.*
+*.cache
+*nosetests.xml
+*coverage.xml
 *,cover
 
 # Translations
@@ -52,14 +52,13 @@ coverage.xml
 *.log
 
 # Sphinx documentation
-docs/_build/
+*docs/_build/
 
 # PyBuilder
-target/
+*target/
 
 # Zip files
 *.zip
 
-week-5/intro-to-tensorflow/neural-network/notMNIST\.pickle
-
-week-9/tensorboard/\.ipynb_checkpoints/
+*.pickle
+*.ipynb_checkpoints/
