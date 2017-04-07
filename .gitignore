@@ -62,3 +62,7 @@ __pycache__/
 
 *.pickle
 *.ipynb_checkpoints/
+
+week-11/transfer-learning/flower_photos/
+
+*.gz
