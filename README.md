@@ -12,7 +12,7 @@ Since the datasets are loaded in memory, 4 GB of RAM are short to run the notebo
 
 I recommend to install the Python bundle [Anaconda][anaconda]. All the assignments have been done with Python 3, so download the installation script accordingly. You can then install [Jupyter Notebook][jupyter] from ``conda``.
 
-The next step is to install TensorFlow. At the time of writing, the latest release is r1.0, after several upgrades during the course. You can refer to the [official documentation][tensorflow-anaconda-install]. Here is the list of commands:
+The next step is to install TensorFlow. At the time of writing, the latest release is r1.0, after several upgrades during the course. You can refer to the [official documentation] and [intallation guide][tensorflow-install]. Here is the list of commands:
 
 ```
 $ conda create -n tensorflow python=3
@@ -34,4 +34,6 @@ All the assignments come from [Udacity][udacity-deep-learning-foundation] and th
 
 [jupyter]: http://jupyter.org/
 [anaconda]: https://www.continuum.io/
+[official documentation]: https://www.tensorflow.org/api_docs/
+[tensorflow-install]: https://www.tensorflow.org/install/
 [tensorflow-repo]: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/udacity
