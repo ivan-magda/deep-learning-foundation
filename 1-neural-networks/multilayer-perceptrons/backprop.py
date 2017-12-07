@@ -20,20 +20,28 @@ weights_hidden_output = np.array([0.1, -0.3])
 
 ## Forward pass
 hidden_layer_input = np.dot(x, weights_input_hidden)
+print('hidden_layer_input', hidden_layer_input)
+
 hidden_layer_output = sigmoid(hidden_layer_input)
+print('hidden_layer_output', hidden_layer_output)
 
 output_layer_in = np.dot(hidden_layer_output, weights_hidden_output)
+print('output_layer_in: ', output_layer_in)
 output = sigmoid(output_layer_in)
+print('output', output)
 
 ## Backwards pass
 ## TODO: Calculate output error
 error = target - output
+print('error', error)
 
 # TODO: Calculate error term for output layer
 output_error_term = error * output * (1 - output)
+print('output_error_term', output_error_term)
 
 # TODO: Calculate error term for hidden layer
 hidden_error_term = np.dot(weights_hidden_output, output_error_term) * hidden_layer_output * (1 - hidden_layer_output)
+print('hidden_error_term', hidden_error_term)
 
 # TODO: Calculate change in weights for hidden layer to output layer
 delta_w_h_o = learnrate * output_error_term * hidden_layer_output
