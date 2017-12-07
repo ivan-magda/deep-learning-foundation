@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn import linear_model
+from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
 #read data
@@ -8,7 +8,7 @@ x_values = dataframe[['Brain']]
 y_values = dataframe[['Body']]
 
 #train model on data
-body_reg = linear_model.LinearRegression()
+body_reg = LinearRegression()
 body_reg.fit(x_values, y_values)
 
 #visualize results
