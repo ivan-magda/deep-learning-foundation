@@ -20,7 +20,8 @@ y = boston_data['target']
 
 # Make and fit the linear regression model
 # TODO: Fit the model and Assign it to the model variable
-model = LinearRegression().fit(x, y)
+model = LinearRegression()
+model.fit(x, y)
 
 # Make a prediction using the model
 sample_house = [[2.29690000e-01, 0.00000000e+00, 1.05900000e+01, 0.00000000e+00, 4.89000000e-01,
