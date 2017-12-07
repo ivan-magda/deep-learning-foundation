@@ -16,5 +16,12 @@ When input data comes into a perceptron, it gets multiplied by a weight value th
 A higher weight means the neural network considers that input more important than other inputs, and lower weight means that the data is considered less important. An extreme example would be if test scores had no affect at all on university acceptance; then the weight of the test score input data would be zero and it would have no affect on the output of the perceptron.
 
 #### Gradient Descent
-Weight update can be calculated as: `Δwi = ηδxi`
-with the error term δ as: `δ = (y − y^) f′(h) = (y − y^)f′(∑wixi)`
+Weight update can be calculated as:
+
+`Δwi = ηδxi`
+
+
+with the error term δ as:
+
+
+`δ = (y − y^) f′(h) = (y − y^)f′(∑wixi)`
