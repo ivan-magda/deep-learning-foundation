@@ -25,3 +25,21 @@ with the error term δ as:
 
 
 `δ = (y − y^) f′(h) = (y − y^)f′(∑wixi)`
+
+#### Backpropagation
+
+Here's the general algorithm for updating the weights with backpropagation:
+
+- Set the weight steps for each layer to zero
+	- The input to hidden weights Δwij = 0
+	- The hidden to output weights ΔWj = 0
+- For each record in the training data:
+	- Make a forward pass through the network, calculating the output y^
+	- Calculate the error gradient in the output unit, δo = (y − y^)f′(z) where z=∑Wjaj, the input to the output unit.
+	- Propagate the errors to the hidden layer δjh = δoWjf′(hj)
+- Update the weight steps:
+	- ΔWj = ΔWj + δoaj
+	- Δwij = Δwij +δjhai
+- Update the weights, where η is the learning rate and m is the number of records:
+	- Wj = Wj + ηΔWj/mwij = wij + ηΔwij/m
+- Repeat for e epochs.
