@@ -6,6 +6,8 @@ This repository contains demo projects and assignment solutions, that I have don
 
 The course is just great! You will use and develop neural networks for image recognition with convolution, natural language processing with embeddings and character-based text generation with RNN/LTSM.
 
+- [Lecture Notes](./NOTES.md)
+
 ### Core Curriculum:
 
 - [Neural Networks](./1-neural-networks)
